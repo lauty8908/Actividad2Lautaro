@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Google Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: italic;
+
+}
+
+body {
+    width: 80%;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: rgb(150, 6, 6);
+    border: 0.2rem ridge rgb(246, 244, 244);
+    width: 100%;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+nav {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#home-etiqueta {
+    font-size: 2rem;
+    color: rgb(249, 249, 249);
+    text-decoration: none;
+    border-right: solid 0.2rem rgb(254, 254, 254);
+    padding-right: 2rem;
+}
+nav a{
+  transition: transform 0.2s ease;
+}
+nav a:hover{
+    transform: scale(1.08);
+}
+#contacto-etiqueta {
+    font-size: 2rem;
+    color: rgb(255, 254, 254);
+    text-decoration: none;
+}
+
+.recetas-etiqueta {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.articulo-etiqueta {
+    background-color: rgb(195, 135, 135);
+    border: 0.2rem ridge rgb(150, 6, 6);
+    border-top-left-radius: 4rem;
+    border-bottom-right-radius: 4rem;
+    color: white;
+
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    height: auto;
+    width: 50%;
+    border: 0.2rem ridge rgb(150, 6, 6);
+    border-top-left-radius: 4rem;
+    border-bottom-right-radius: 4rem;
+}
+
+#titulo {
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+footer {
+    position: sticky;
+    bottom: 0;
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(249, 249, 249);
+    text-decoration: none;
+    background-color: rgb(150, 6, 6);
+    border: 0.2rem solid rgb(246, 244, 244);
+    width: 100%;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    margin-bottom: 2rem;
+
+}
+
+.articulo-etiqueta h3 {
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    padding-bottom: 1.4rem;
+    padding-left: 1.5rem;
+    text-decoration: underline;
+}
+
+.articulo-etiqueta ul {
+    padding-bottom: 1.4rem;
+    padding-left: 1.5rem;
+}
+
+.articulo-etiqueta li {
+    font-size: 1.3rem;
+    padding-bottom: 0.5rem;
+}
+
+.articulo-etiqueta ol {
+    padding-bottom: 1.4rem;
+    padding-left: 1.5rem;
+}

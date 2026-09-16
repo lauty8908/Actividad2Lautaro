@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Google Sans", sans-serif;
+    font-optical-sizing: auto;
+}
+
+body {
+    width: 80%;
+    min-height: 100vh;
+    margin: 0 auto;
+
+}
+
+main {
+    background-color: #b0f7ff;
+    border: 0.3rem #4f7ced;
+    border-style: outset;
+    color: #04226e;
+}
+
+header {
+    position: sticky;
+    margin-bottom: 2rem;
+    top: 0;
+    z-index: 1000;
+    text-align: center;
+    background-color: #b0f7ff;
+    border: 0.3rem #4f7ced;
+    border-style: outset;
+    color: #04226e;
+
+}
+
+nav {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+a {
+    color: #04226e;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: bold;
+    transition: transform 0.2s ease-in-out;
+}
+a:hover{
+    transform: scale(1.2);
+    color: #010c28;
+}
+
+h2 {
+    padding: 1rem 0rem 1rem 2rem;
+    text-decoration: underline;
+}
+
+li {
+    padding: 0rem 0rem 0.5rem 2rem;
+    list-style: none;
+}
+h1 a{
+    font-size: 2.4rem;
+}
+
+
+section {
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem;
+    gap: 1rem;
+}
+
+article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: 0.3rem #4f7ced;
+    border-style: outset;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+p {
+    padding-top: 1rem;
+    line-height: 1.6rem;
+}

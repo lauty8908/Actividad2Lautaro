@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos</title>
+    <link rel="stylesheet" href="./stylecontacto.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="./index.html" id="home-etiqueta"><strong>Home</strong></a>
+            <a href="./indexcontacto.html" id="contacto-etiqueta"><strong>Contacto</strong></a>
+        </nav>
+    </header>
+    <main>
+        <form action method="get">
+            <div class="label-input">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
+            </div>
+            <div class="label-input">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="correo@ejemplo.com" required>
+            </div>
+            <div class="label-input">
+                <label for="tel">Telefono:</label>
+                <input type="tel" name="tel" id="tel" minlength="10" maxlength="10" required>
+            </div>
+            <div class="label-input">
+                <label for="mensaje">Mensaje:</label>
+                <textarea name="mensaje" id="mensaje"></textarea>
+            </div>
+            <div class="botones">
+                <button type="submit" id="boton-enviar">Enviar</button>
+                <button type="reset" id="boton-cancelar">Cancelar</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>
+            Todos los derechos reservados.
+        </p>
+    </footer>
+</body>
+
+</html>
