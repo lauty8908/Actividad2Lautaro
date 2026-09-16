@@ -1,0 +1,113 @@
+main{
+    text-align: center;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "f f"
+        "e e"
+        "c d"
+        "b b"
+        "a a";
+    background-color: #fff;
+    color: black;
+}
+
+.a { 
+    grid-area: a;
+    background-color:green ;
+}
+.b { 
+    grid-area: b;
+    background-color: green; 
+}
+.c { 
+    grid-area: c; 
+    background-color:lightgoldenrodyellow;
+}
+.d { 
+    grid-area: d; 
+    background-color: lightgoldenrodyellow;
+}
+.e { 
+    grid-area: e; 
+    background-color: lightblue;
+}
+.f { 
+    grid-area: f; 
+    background-color: lightpink;
+}
+
+.box{
+    padding: 1em;
+    font-size: 150%;
+    border: 0.01em solid;
+}
+
+@media (min-width: 30em) {
+    .wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 2fr 1fr;
+        background-color: #fff;
+        color: black;
+}
+}
+
+@media (min-width: 30em) {
+    .box{
+        padding: 1em;
+        font-size: 150%;
+        border: 0.01em solid;
+}
+}
+
+@media (min-width: 30em) {
+    .a{
+        background-color: green;
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+}
+
+@media (min-width: 30em) {
+    .b{
+    background-color: green;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+}
+
+@media (min-width: 30em) {
+    .c{
+    background-color: lightgoldenrodyellow;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+}
+
+@media (min-width: 30em) {
+    .d{
+    background-color: lightgoldenrodyellow;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+}
+
+@media (min-width: 30em) {
+    .e{
+    background-color: lightpink;
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+}
+
+@media (min-width: 30em) {
+    .f{
+    background-color: lightblue;
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+}

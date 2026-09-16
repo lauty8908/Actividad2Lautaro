@@ -1,0 +1,184 @@
+main{
+    text-align: center;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "a b b d"
+        "a c c d"
+        "e e f f";
+    background-color: #fff;
+    color: black;
+}
+
+.a { 
+    grid-area: a;
+    background-color:green ;
+}
+.b { 
+    grid-area: b;
+    background-color: lightsalmon; 
+}
+.c { 
+    grid-area: c; 
+    background-color:lightsalmon;
+}
+.d { 
+    grid-area: d; 
+    background-color: green;
+}
+.e { 
+    grid-area: e; 
+    background-color: lightpink;
+}
+.f { 
+    grid-area: f; 
+    background-color: lightblue;
+}
+
+.box{
+    padding: 1em;
+    font-size: 150%;
+    border: 0.01em solid;
+}
+
+
+/*Mobile*/
+
+@media (max-width: 30em) {
+    .wrapper{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        background-color: #fff;
+        color: black;
+}
+}
+
+@media (max-width: 30em) {
+    .box{
+        padding: 1em;
+        font-size: 150%;
+        border: 0.01em solid;
+}
+}
+
+@media (max-width: 30em) {
+    .a{
+        background-color: green;
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+}
+
+@media (max-width: 30em) {
+    .b{
+    background-color: green;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+}
+
+@media (max-width: 30em) {
+    .c{
+    background-color: lightgoldenrodyellow;
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+}
+
+@media (max-width: 30em) {
+    .d{
+    background-color: lightgoldenrodyellow;
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+}
+
+@media (max-width: 30em) {
+    .e{
+    background-color: lightblue;
+    grid-column: 1/2;
+    grid-row: 5/6;
+}
+}
+
+@media (max-width: 30em) {
+    .f{
+    background-color: lightpink;
+    grid-column: 1/2;
+    grid-row: 6/7;
+}
+}
+
+
+/*Tablet*/
+
+@media (min-width: 30em) and (max-width: 48em) {
+    .wrapper{
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        background-color: #fff;
+        color: black;
+}
+}
+
+@media (min-width: 30em) and (max-width: 48em) {
+    .box{
+        padding: 1em;
+        font-size: 150%;
+        border: 0.01em solid;
+}
+}
+
+@media (min-width: 30em) and (max-width: 48em) {
+    .a{
+        background-color: green;
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+}
+
+@media (min-width: 30em) and (max-width: 48em) {
+    .b{
+    background-color: green;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+}
+
+@media (min-width: 30em) and (max-width: 48em) {
+    .c{
+    background-color: lightgoldenrodyellow;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+}
+
+@media (min-width: 30em) and (max-width: 48em) {
+    .d{
+    background-color: lightgoldenrodyellow;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+}
+
+@media (min-width: 30em) and (max-width: 48em) {
+    .e{
+    background-color: lightpink;
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+}
+
+@media (min-width: 30em) and (max-width: 48em) {
+    .f{
+    background-color: lightblue;
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+}
